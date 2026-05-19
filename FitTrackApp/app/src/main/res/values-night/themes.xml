@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.FitTrackApp" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="android:statusBarColor">@color/fit_background</item>
+        <item name="android:navigationBarColor">@color/fit_background</item>
+        <item name="android:windowBackground">@color/fit_background</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+
+        <item name="android:colorBackground">@color/fit_background</item>
+        <item name="colorSurface">@color/fit_surface</item>
+        <item name="colorSurfaceVariant">@color/fit_surface_variant</item>
+        <item name="colorOnSurface">@color/fit_on_surface</item>
+        <item name="colorOnSurfaceVariant">@color/fit_on_surface_variant</item>
+        <item name="colorOutline">@color/fit_outline</item>
+        <item name="colorOutlineVariant">@color/fit_outline_variant</item>
+
+        <item name="colorPrimary">@color/fit_primary</item>
+        <item name="colorOnPrimary">@color/fit_on_primary</item>
+        <item name="colorPrimaryContainer">@color/fit_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/fit_on_primary_container</item>
+
+        <item name="colorSecondary">@color/fit_secondary</item>
+        <item name="colorOnSecondary">@color/fit_on_secondary</item>
+        <item name="colorSecondaryContainer">@color/fit_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/fit_on_secondary_container</item>
+
+        <item name="colorTertiary">@color/fit_tertiary</item>
+        <item name="colorOnTertiary">@color/fit_on_tertiary</item>
+        <item name="colorTertiaryContainer">@color/fit_tertiary_container</item>
+        <item name="colorOnTertiaryContainer">@color/fit_on_tertiary_container</item>
+
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.FitTrack.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.FitTrack.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.FitTrack.LargeComponent</item>
+
+        <item name="materialButtonStyle">@style/Widget.FitTrack.Button</item>
+        <item name="borderlessButtonStyle">@style/Widget.FitTrack.Button.TextButton</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.FitTrack.MaterialAlertDialog</item>
+    </style>
+</resources>

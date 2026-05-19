@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Body Measurements"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <EditText
+            android:id="@+id/etBodyWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Body Weight"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/etChest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Chest"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/etArms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Arms"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/etWaist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Waist"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/etLegs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Legs"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/etMeasurementDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Select Date"
+            android:focusable="false"
+            android:clickable="true"
+            android:inputType="none" />
+
+        <Button
+            android:id="@+id/btnAddMeasurement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Measurement"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btnUpdateMeasurement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Latest Measurement"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Measurement History"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:id="@+id/tableMeasurements"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*"
+                android:background="@color/fit_table_container_bg" />
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/tvMeasurements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp" />
+
+    </LinearLayout>
+</ScrollView>

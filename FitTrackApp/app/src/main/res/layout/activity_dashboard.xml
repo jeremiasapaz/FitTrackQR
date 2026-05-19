@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FitTrack Dashboard"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/appearance_label"
+            android:textSize="14sp"
+            android:textColor="?android:attr/textColorSecondary"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btnThemeLight"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:padding="14dp"
+                android:layout_marginEnd="12dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/theme_light"
+                app:srcCompat="@drawable/ic_theme_sun"
+                app:tint="?attr/colorOnSurface" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btnThemeDark"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:padding="14dp"
+                android:layout_marginStart="12dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/theme_dark"
+                app:srcCompat="@drawable/ic_theme_moon"
+                app:tint="?attr/colorOnSurface" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnExercises"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exercises" />
+
+        <Button
+            android:id="@+id/btnWorkouts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Workouts"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/btnWorkoutLogs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Workout Logs"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/btnWeeklyPlans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Weekly Plans"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/btnBodyMeasurements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Body Measurements"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/btnScanQrCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scan QR Code"
+            android:layout_marginTop="12dp" />
+
+    </LinearLayout>
+
+</ScrollView>

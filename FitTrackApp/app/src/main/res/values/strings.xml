@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FitTrackApp</string>
+    <string name="appearance_label">Appearance</string>
+    <string name="theme_system">Match device</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+</resources>

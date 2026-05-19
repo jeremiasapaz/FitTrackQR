@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Sun disk -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M12,8c2.21,0 4,1.79 4,4s-1.79,4 -4,4 -4,-1.79 -4,-4 1.79,-4 4,-4z" />
+    <!-- Rays -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M11,2h2v3h-2zM11,19h2v3h-2zM2,11h3v2H2zM19,11h3v2h-3z" />
+</vector>

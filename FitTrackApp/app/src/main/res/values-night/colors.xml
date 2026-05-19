@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Shell — obsidian graphite -->
+    <color name="fit_background">#FF06060A</color>
+    <color name="fit_surface">#FF0E0E14</color>
+    <color name="fit_surface_variant">#FF17171F</color>
+    <color name="fit_on_surface">#FFF5F3FF</color>
+    <color name="fit_on_surface_variant">#FFA8A4BC</color>
+    <color name="fit_outline">#FF36364A</color>
+    <color name="fit_outline_variant">#FF262633</color>
+
+    <!-- Deep amethyst accent -->
+    <color name="fit_primary">#FFD0C1FF</color>
+    <color name="fit_on_primary">#FF190B36</color>
+    <color name="fit_primary_container">#FF443373</color>
+    <color name="fit_on_primary_container">#FFF1E9FF</color>
+
+    <color name="fit_secondary">#FFB4C5E3</color>
+    <color name="fit_on_secondary">#FF0D1522</color>
+    <color name="fit_secondary_container">#FF243244</color>
+    <color name="fit_on_secondary_container">#FFD6E4FF</color>
+
+    <color name="fit_tertiary">#FF7DD7C9</color>
+    <color name="fit_on_tertiary">#FF00201A</color>
+    <color name="fit_tertiary_container">#FF003E35</color>
+    <color name="fit_on_tertiary_container">#FF9CF3E6</color>
+
+    <!-- Tables — inset slate frame -->
+    <color name="fit_table_container_bg">#FF090910</color>
+    <color name="fit_table_header_bg">#FF261F48</color>
+    <color name="fit_table_header_text">#FFF3EEFF</color>
+    <color name="fit_table_row_even">#FF15151E</color>
+    <color name="fit_table_row_odd">#FF101018</color>
+    <color name="fit_table_cell_text">#FFEAEAF4</color>
+
+    <color name="fit_table_button_ripple">#35FFFFFF</color>
+</resources>

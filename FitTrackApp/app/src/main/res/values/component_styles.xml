@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Rounded corners across Material components -->
+    <style name="ShapeAppearance.FitTrack.SmallComponent" parent="ShapeAppearance.Material3.Corner.Small">
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <style name="ShapeAppearance.FitTrack.MediumComponent" parent="ShapeAppearance.Material3.Corner.Medium">
+        <item name="cornerSize">18dp</item>
+    </style>
+
+    <style name="ShapeAppearance.FitTrack.LargeComponent" parent="ShapeAppearance.Material3.Corner.Large">
+        <item name="cornerSize">28dp</item>
+    </style>
+
+    <!-- Primary CTAs: soft capsule -->
+    <style name="ShapeAppearance.FitTrack.Button" parent="ShapeAppearance.Material3.Corner.Full" />
+
+    <style name="Widget.FitTrack.Button" parent="Widget.Material3.Button">
+        <item name="shapeAppearance">@style/ShapeAppearance.FitTrack.Button</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0.03</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingRight">24dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+    </style>
+
+    <style name="Widget.FitTrack.Button.TextButton" parent="Widget.Material3.Button.TextButton">
+        <item name="shapeAppearance">@style/ShapeAppearance.FitTrack.Button</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+</resources>
