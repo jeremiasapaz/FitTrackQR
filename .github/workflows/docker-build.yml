@@ -1,18 +1,26 @@
-name: Backend Docker Build
+name: Push Backend Image to Azure Container Registry
 
 on:
-  push:
-    branches: [ main, develop ]
-  pull_request:
-    branches: [ main, develop ]
+  workflow_dispatch:
 
 jobs:
-  docker-build:
+  push-backend-image:
+    name: Build and Push Backend Docker Image
     runs-on: ubuntu-latest
+
+    env:
+      IMAGE_NAME: fittrack-backend
+      IMAGE_TAG: latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Login to Azure Container Registry
+        run: docker login ${{ secrets.AZURE_REGISTRY_SERVER }} -u ${{ secrets.AZURE_REGISTRY_USERNAME }} -p ${{ secrets.AZURE_REGISTRY_PASSWORD }}
+
       - name: Build backend Docker image
-        run: docker build -t fittrack-backend:latest ./backend
+        run: docker build -t ${{ secrets.AZURE_REGISTRY_SERVER }}/$IMAGE_NAME:$IMAGE_TAG ./backend
+
+      - name: Push backend Docker image to ACR
+        run: docker push ${{ secrets.AZURE_REGISTRY_SERVER }}/$IMAGE_NAME:$IMAGE_TAG
