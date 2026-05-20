@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "b5qc6SiP/aU=",
+  "dgSpecHash": "oxyH8yKd3L4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ramit\\Desktop\\To write\\Nuwantha Gunasekara QR App Development Introduction 17th March\\code\\backend\\backend.csproj",
+  "projectFilePath": "C:\\Users\\ramit\\Desktop\\To write\\Nuwantha Gunasekara QR App Development Introduction 17th March\\git\\FitTrackQR\\backend\\backend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ramit\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\ramit\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\10.0.8\\microsoft.aspnetcore.authentication.jwtbearer.10.0.8.nupkg.sha512",
