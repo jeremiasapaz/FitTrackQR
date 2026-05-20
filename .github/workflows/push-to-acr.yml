@@ -1,11 +1,11 @@
-name: Push Backend Image to Azure Container Registry
+name: Push FitTrack Backend Image to Azure Registry
 
 on:
   workflow_dispatch:
 
 jobs:
-  push-backend-image:
-    name: Build and Push Backend Docker Image
+  push-fittrack-backend:
+    name: Build and Push FitTrack Backend Docker Image
     runs-on: ubuntu-latest
 
     env:
@@ -18,14 +18,12 @@ jobs:
 
       - name: Login to Azure Container Registry
         run: |
-          echo "${{ secrets.ACR_PASSWORD }}" | docker login ${{ secrets.ACR_LOGIN_SERVER }} \
-            -u "${{ secrets.ACR_USERNAME }}" \
-            --password-stdin
+          echo "${{ secrets.FITTRACK_AZURE_REGISTRY_PASSWORD }}" | docker login "${{ secrets.FITTRACK_AZURE_REGISTRY_SERVER }}" --username "${{ secrets.FITTRACK_AZURE_REGISTRY_USERNAME }}" --password-stdin
 
       - name: Build backend Docker image
         run: |
-          docker build -t ${{ secrets.ACR_LOGIN_SERVER }}/$IMAGE_NAME:$IMAGE_TAG ./backend
+          docker build -t "${{ secrets.FITTRACK_AZURE_REGISTRY_SERVER }}/$IMAGE_NAME:$IMAGE_TAG" ./backend
 
-      - name: Push backend Docker image to ACR
+      - name: Push backend Docker image to Azure Container Registry
         run: |
-          docker push ${{ secrets.ACR_LOGIN_SERVER }}/$IMAGE_NAME:$IMAGE_TAG
+          docker push "${{ secrets.FITTRACK_AZURE_REGISTRY_SERVER }}/$IMAGE_NAME:$IMAGE_TAG"
