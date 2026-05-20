@@ -22,8 +22,8 @@ jobs:
 
       - name: Give Gradle permission
         run: chmod +x ./gradlew
-        working-directory: ./frontend
+        working-directory: ./FitTrackApp
 
       - name: Build Android frontend
         run: ./gradlew build
-        working-directory: ./frontend
+        working-directory: ./FitTrackApp
