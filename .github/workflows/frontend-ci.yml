@@ -1,0 +1,29 @@
+name: Frontend CI
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  frontend-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Give Gradle permission
+        run: chmod +x ./gradlew
+        working-directory: ./frontend
+
+      - name: Build Android frontend
+        run: ./gradlew build
+        working-directory: ./frontend
